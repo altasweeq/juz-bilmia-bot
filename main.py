@@ -926,6 +926,31 @@ Yes, we use *Moyasar Financial Gateway*:
 ✅ Mada | Visa | Mastercard | Apple Pay"""
 }
 
+# ========== الرسالة الافتراضية ==========
+DEFAULT_AR = """💬 *حالياً ليس لدي معلومة مؤكدة عن هذا الاستفسار*
+
+يشرفنا خدمتك والرد على سؤالك مباشرة عبر:
+
+📧 *البريد الرسمي:*
+info@juzabilmia.com
+
+🌐 *الموقع:*
+juzabilmia.com
+
+أو يمكنك تصفح القائمة بالأسفل للمزيد من المعلومات 👇"""
+
+DEFAULT_EN = """💬 *I don't have confirmed information about this yet*
+
+We'd be honored to serve you and reply directly via:
+
+📧 *Official Email:*
+info@juzabilmia.com
+
+🌐 *Website:*
+juzabilmia.com
+
+Or you can browse the menu below for more information 👇"""
+
 # ========== إرسال الرسائل ==========
 def send(chat_id, text, reply_markup=None):
     import json
@@ -961,7 +986,7 @@ def smart_reply(text, lang):
     
     keywords_ar = {
         'platform_correction': ['منصة', 'منصه', 'هل انتم منصة', 'هل أنتم منصة', 'موقع منصة'],
-        'about': ['عن الشركة', 'من انتم', 'من أنتم', 'تعريف', 'الشركة'],
+        'about': ['عن الشركة', 'من انتم', 'من أنتم', 'تعريف', 'الشركة', 'مقر الشركة', 'مقركم', 'تأسست', 'تاسست', 'وين مقركم'],
         'how': ['كيف تعمل', 'الخطوات', 'كيف اشترك', 'كيف أبدأ', 'كيف ابدا', 'الاشتراك'],
         'portfolio': ['عقارات', 'محفظة', 'العقارات', 'المحفظة'],
         'calc': ['حاسبة', 'احسب', 'كم سأربح', 'كم العائد', 'حساب'],
@@ -979,7 +1004,7 @@ def smart_reply(text, lang):
     
     keywords_en = {
         'platform_correction': ['platform', 'are you a platform'],
-        'about': ['about', 'who are you', 'company'],
+        'about': ['about', 'who are you', 'company', 'headquarter', 'founded', 'established'],
         'how': ['how does', 'how it works', 'steps', 'how to start', 'how to subscribe'],
         'portfolio': ['properties', 'portfolio'],
         'calc': ['calculator', 'how much will i earn', 'returns'],
@@ -1068,46 +1093,25 @@ def webhook():
         TEXTS = TEXTS_AR if lang == 'ar' else TEXTS_EN
         FAQ = FAQ_AR if lang == 'ar' else FAQ_EN
         
+        # دائماً نرد - حتى لو ما لقينا كلمة مفتاحية
         if action == 'welcome':
             send(chat_id, TEXTS['welcome'], main_menu(chat_id))
         elif action == 'faq':
             send(chat_id, TEXTS['faq'], faq_menu(chat_id))
-        elif action in TEXTS:
+        elif action and action in TEXTS:
             send(chat_id, TEXTS[action], back_btn(chat_id))
-        elif action in FAQ:
+        elif action and action in FAQ:
             send(chat_id, FAQ[action], back_btn(chat_id))
         else:
-            if lang == 'ar':
-                msg = """💬 *حالياً ليس لدي معلومة مؤكدة عن هذا الاستفسار*
-
-يشرفنا خدمتك والرد على سؤالك مباشرة عبر:
-
-📧 *البريد الرسمي:*
-info@juzabilmia.com
-
-🌐 *الموقع:*
-juzabilmia.com
-
-أو يمكنك تصفح القائمة بالأسفل للمزيد من المعلومات 👇"""
-            else:
-                msg = """💬 *I don't have confirmed information about this yet*
-
-We'd be honored to serve you and reply directly via:
-
-📧 *Official Email:*
-info@juzabilmia.com
-
-🌐 *Website:*
-juzabilmia.com
-
-Or you can browse the menu below for more information 👇"""
+            # رد افتراضي على أي سؤال غير معروف
+            msg = DEFAULT_AR if lang == 'ar' else DEFAULT_EN
             send(chat_id, msg, main_menu(chat_id))
     
     return "OK"
 
 @app.route('/')
 def home():
-    return "🤖 Juz Bilmia Bot v2.2 - Active!"
+    return "🤖 Juz Bilmia Bot v2.3 - Active!"
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
