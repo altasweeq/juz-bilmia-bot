@@ -1078,26 +1078,36 @@ def webhook():
             send(chat_id, FAQ[action], back_btn(chat_id))
         else:
             if lang == 'ar':
-                msg = """🤔 *لم أفهم سؤالك بدقة*
+                msg = """💬 *حالياً ليس لدي معلومة مؤكدة عن هذا الاستفسار*
 
-يمكنك:
-- استخدام القائمة بالأسفل 👇
-- كتابة كلمة مفتاحية مثل: "العقارات"، "الحاسبة"، "تواصل"
-- أو التواصل عبر البريد الرسمي: info@juzabilmia.com"""
+يشرفنا خدمتك والرد على سؤالك مباشرة عبر:
+
+📧 *البريد الرسمي:*
+info@juzabilmia.com
+
+🌐 *الموقع:*
+juzabilmia.com
+
+أو يمكنك تصفح القائمة بالأسفل للمزيد من المعلومات 👇"""
             else:
-                msg = """🤔 *Sorry, I didn't understand*
+                msg = """💬 *I don't have confirmed information about this yet*
 
-You can:
-- Use the menu below 👇
-- Type a keyword like: "properties", "calculator", "contact"
-- Or contact us via email: info@juzabilmia.com"""
+We'd be honored to serve you and reply directly via:
+
+📧 *Official Email:*
+info@juzabilmia.com
+
+🌐 *Website:*
+juzabilmia.com
+
+Or you can browse the menu below for more information 👇"""
             send(chat_id, msg, main_menu(chat_id))
     
     return "OK"
 
 @app.route('/')
 def home():
-    return "🤖 Juz Bilmia Bot v2.1 - Active!"
+    return "🤖 Juz Bilmia Bot v2.2 - Active!"
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
