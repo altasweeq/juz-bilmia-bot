@@ -29,7 +29,7 @@ def main_menu(chat_id):
                 [{'text': '💳 الدفع الآمن', 'callback_data': 'payment'},
                  {'text': '📱 التطبيق', 'callback_data': 'app'}],
                 [{'text': '✍️ سجّل الآن', 'url': 'https://juzabilmia.com/register.html'}],
-                [{'text': '💬 واتساب', 'url': 'https://wa.me/966593064061'},
+                [{'text': '📧 البريد الرسمي', 'url': 'mailto:info@juzabilmia.com'},
                  {'text': '🌐 الموقع', 'url': 'https://juzabilmia.com'}],
                 [{'text': '🇬🇧 English', 'callback_data': 'lang_en'}]
             ]
@@ -48,7 +48,7 @@ def main_menu(chat_id):
                 [{'text': '💳 Secure Payment', 'callback_data': 'payment'},
                  {'text': '📱 Mobile App', 'callback_data': 'app'}],
                 [{'text': '✍️ Register Now', 'url': 'https://juzabilmia.com/register.html'}],
-                [{'text': '💬 WhatsApp', 'url': 'https://wa.me/966593064061'},
+                [{'text': '📧 Official Email', 'url': 'mailto:info@juzabilmia.com'},
                  {'text': '🌐 Website', 'url': 'https://juzabilmia.com'}],
                 [{'text': '🇸🇦 العربية', 'callback_data': 'lang_ar'}]
             ]
@@ -93,7 +93,6 @@ TEXTS_AR = {
 ✅ بدون حد أدنى مرتفع
 
 📞 *تواصل:*
-- الجوال: 0593064061
 - البريد: info@juzabilmia.com
 - الموقع: juzabilmia.com""",
 
@@ -334,7 +333,25 @@ EJAR_86992343
 - المدة: 3-5 سنوات
 
 🌐 لحاسبة تفاعلية:
-juzabilmia.com"""
+juzabilmia.com""",
+
+    'platform_correction': """📍 *تصحيح مهم:*
+
+*جزء بالمية* ليست منصة — بل هي *شركة سعودية مرخصة رسمياً*.
+
+🏢 *الاسم الكامل:*
+شركة جزء بالمية للتطوير والاستثمار العقاري
+
+🏛️ *السجل التجاري:* 7040575412
+📄 *رخصة فال للوساطة:* I200027650
+📄 *رخصة إدارة الأملاك:* 2200003901
+📄 *عضوية الغرفة التجارية:* 965892
+
+✅ مرخصون من الجهات الحكومية المختصة
+✅ نقدم خدمات التملك العقاري الجزئي
+✅ متوافقون مع الشريعة الإسلامية
+
+اطلع على المزيد من القائمة 👇"""
 }
 
 # ========== أسئلة شائعة ==========
@@ -413,8 +430,7 @@ FAQ_AR = {
 
     'q5': """*٥. كيف أتواصل معكم؟*
 
-📱 *واتساب:* 0593064061
-📧 *البريد:* info@juzabilmia.com
+📧 *البريد الرسمي:* info@juzabilmia.com
 🤖 *تيليجرام:* @JuzBilmia2026_bot
 🌐 *الموقع:* juzabilmia.com
 
@@ -530,7 +546,6 @@ Enable you to own a share in pre-leased commercial properties and earn quarterly
 ✅ No high minimums
 
 📞 *Contact:*
-- Phone: 0593064061
 - Email: info@juzabilmia.com
 - Web: juzabilmia.com""",
 
@@ -771,7 +786,25 @@ Choose a question:""",
 - Duration: 3-5 years
 
 🌐 Interactive calculator:
-juzabilmia.com"""
+juzabilmia.com""",
+
+    'platform_correction': """📍 *Important Clarification:*
+
+*Juz Bilmia* is not a platform — it is an *officially licensed Saudi company*.
+
+🏢 *Full Name:*
+Juz Bilmia Real Estate Development & Investment
+
+🏛️ *Commercial Registration:* 7040575412
+📄 *FAL Brokerage License:* I200027650
+📄 *Property Management License:* 2200003901
+📄 *Chamber of Commerce:* 965892
+
+✅ Licensed by official Saudi authorities
+✅ We provide fractional real estate ownership
+✅ Sharia-compliant
+
+Explore more from the menu 👇"""
 }
 
 FAQ_EN = {
@@ -810,8 +843,7 @@ All contracts also documented on Ejar government platform.""",
 
     'q5': """*5. How to contact us?*
 
-📱 *WhatsApp:* 0593064061
-📧 *Email:* info@juzabilmia.com
+📧 *Official Email:* info@juzabilmia.com
 🤖 *Telegram:* @JuzBilmia2026_bot
 🌐 *Website:* juzabilmia.com
 
@@ -896,6 +928,7 @@ Yes, we use *Moyasar Financial Gateway*:
 
 # ========== إرسال الرسائل ==========
 def send(chat_id, text, reply_markup=None):
+    import json
     data = {
         'chat_id': chat_id,
         'text': text,
@@ -903,7 +936,6 @@ def send(chat_id, text, reply_markup=None):
         'disable_web_page_preview': True
     }
     if reply_markup:
-        import json
         data['reply_markup'] = json.dumps(reply_markup)
     requests.post(f"{API}/sendMessage", json=data)
 
@@ -927,17 +959,17 @@ def answer_cb(cb_id):
 def smart_reply(text, lang):
     t = text.lower().strip()
     
-    # عربي
     keywords_ar = {
+        'platform_correction': ['منصة', 'منصه', 'هل انتم منصة', 'هل أنتم منصة', 'موقع منصة'],
         'about': ['عن الشركة', 'من انتم', 'من أنتم', 'تعريف', 'الشركة'],
-        'how': ['كيف تعمل', 'الخطوات', 'كيف اشترك', 'كيف أبدأ', 'كيف ابدا'],
+        'how': ['كيف تعمل', 'الخطوات', 'كيف اشترك', 'كيف أبدأ', 'كيف ابدا', 'الاشتراك'],
         'portfolio': ['عقارات', 'محفظة', 'العقارات', 'المحفظة'],
         'calc': ['حاسبة', 'احسب', 'كم سأربح', 'كم العائد', 'حساب'],
         'features': ['ميزات', 'مميزات', 'لماذا'],
         'sharia': ['شرعي', 'شريعة', 'حلال', 'فتوى'],
         'licenses': ['ترخيص', 'تراخيص', 'مرخص', 'سجل تجاري', 'فال'],
         'payment': ['دفع', 'مدى', 'فيزا', 'ميسر', 'ميسّر', 'بطاقة', 'آمن'],
-        'app': ['تطبيق', 'جوال', 'تحميل', 'app', 'android', 'ios'],
+        'app': ['تطبيق', 'جوال', 'تحميل'],
         'faq': ['اسئلة', 'أسئلة', 'سؤال', 'استفسار'],
         'q9': ['الحد الادنى', 'الحد الأدنى', 'اقل مبلغ', 'أقل مبلغ', 'كم اقل', 'كم أقل'],
         'q3': ['كم العائد', 'كم الربح', 'العائد السنوي', 'الفائدة'],
@@ -946,8 +978,9 @@ def smart_reply(text, lang):
     }
     
     keywords_en = {
+        'platform_correction': ['platform', 'are you a platform'],
         'about': ['about', 'who are you', 'company'],
-        'how': ['how does', 'how it works', 'steps', 'how to start'],
+        'how': ['how does', 'how it works', 'steps', 'how to start', 'how to subscribe'],
         'portfolio': ['properties', 'portfolio'],
         'calc': ['calculator', 'how much will i earn', 'returns'],
         'features': ['features', 'why', 'benefits'],
@@ -969,7 +1002,6 @@ def smart_reply(text, lang):
             if word in t:
                 return key
     
-    # ترحيب
     greetings_ar = ['مرحب', 'هلا', 'السلام', 'اهلا', 'أهلا', 'هاي', 'صباح', 'مساء']
     greetings_en = ['hi', 'hello', 'hey', 'good morning', 'good evening']
     greetings = greetings_ar if lang == 'ar' else greetings_en
@@ -985,7 +1017,6 @@ def smart_reply(text, lang):
 def webhook():
     data = request.get_json()
     
-    # Callback من الأزرار
     if 'callback_query' in data:
         cb = data['callback_query']
         chat_id = cb['message']['chat']['id']
@@ -995,7 +1026,6 @@ def webhook():
         
         answer_cb(cb_id)
         
-        # تبديل اللغة
         if action == 'lang_en':
             user_lang[chat_id] = 'en'
             edit(chat_id, msg_id, TEXTS_EN['welcome'], main_menu(chat_id))
@@ -1024,7 +1054,6 @@ def webhook():
         
         return "OK"
     
-    # رسائل نصية
     if 'message' in data and 'text' in data['message']:
         chat_id = data['message']['chat']['id']
         text = data['message']['text']
@@ -1035,7 +1064,6 @@ def webhook():
             send(chat_id, TEXTS['welcome'], main_menu(chat_id))
             return "OK"
         
-        # رد ذكي على الأسئلة الطبيعية
         action = smart_reply(text, lang)
         TEXTS = TEXTS_AR if lang == 'ar' else TEXTS_EN
         FAQ = FAQ_AR if lang == 'ar' else FAQ_EN
@@ -1049,28 +1077,27 @@ def webhook():
         elif action in FAQ:
             send(chat_id, FAQ[action], back_btn(chat_id))
         else:
-            # رد افتراضي
             if lang == 'ar':
                 msg = """🤔 *لم أفهم سؤالك بدقة*
 
 يمكنك:
 - استخدام القائمة بالأسفل 👇
 - كتابة كلمة مفتاحية مثل: "العقارات"، "الحاسبة"، "تواصل"
-- أو التواصل مع الإدارة على واتساب: 0593064061"""
+- أو التواصل عبر البريد الرسمي: info@juzabilmia.com"""
             else:
                 msg = """🤔 *Sorry, I didn't understand*
 
 You can:
 - Use the menu below 👇
 - Type a keyword like: "properties", "calculator", "contact"
-- Or contact us via WhatsApp: 0593064061"""
+- Or contact us via email: info@juzabilmia.com"""
             send(chat_id, msg, main_menu(chat_id))
     
     return "OK"
 
 @app.route('/')
 def home():
-    return "🤖 Juz Bilmia Bot v2.0 - Active!"
+    return "🤖 Juz Bilmia Bot v2.1 - Active!"
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
