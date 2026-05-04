@@ -66,13 +66,11 @@ TEXTS_AR = {
 
 🏢 *التملك العقاري الجزئي في المملكة*
 
-استثمر في عقارات تجارية مؤجرة مسبقاً
-بدءاً من *1,000 ريال فقط*
-عوائد تصل إلى *10.16% سنوياً*
+عرض عقارات تجارية وسكنية مؤجرة مسبقاً
+بحد أدنى *1,000 ريال* للحصة
+عوائد تقديرية تصل إلى *10.16% سنوياً* (بعد الترخيص)
 
-✅ مرخصون رسمياً من هيئة العقار وفال
-✅ متوافق مع الشريعة الإسلامية
-✅ موثق في منصة إيجار الحكومية
+⚠️ *نحن في مرحلة إطلاق تجريبي ومقدّمون على البيئة التنظيمية التجريبية لهيئة العقار، ولم يصدر لنا ترخيص بمزاولة نشاط التملك العقاري الجزئي بعد. لا يتم حالياً بيع حصص أو تحصيل مبالغ.*
 
 👇 *اختر ما تريد معرفته:*""",
 
@@ -86,7 +84,7 @@ TEXTS_AR = {
 💼 *رأس المال:* 100,000 ريال
 
 🎯 *رؤيتنا:*
-نتيح لك تملك حصة في عقارات تجارية مؤجرة بعقود سارية، والحصول على عوائد إيجارية ربع سنوية، بمبلغ يبدأ من 1,000 ريال فقط.
+وفقاً للخطة المعتمدة بعد صدور الترخيص، نتيح لك تملك حصة في عقارات تجارية وسكنية مؤجرة بعقود سارية، والحصول على عوائد إيجارية ربع سنوية، بمبلغ يبدأ من 1,000 ريال للحصة.
 
 ✅ بدون تعقيدات
 ✅ بدون وسطاء
@@ -104,7 +102,7 @@ TEXTS_AR = {
 أنشئ حسابك في دقيقتين وتحقق من هويتك بشكل آمن
 
 2️⃣ *اختر عقارك*
-تصفح 3 عقارات تجارية مؤجرة مسبقاً في الرياض
+تصفح 3 عقارات تجارية وسكنية مؤجرة مسبقاً في الرياض
 
 3️⃣ *اشترِ حصتك*
 استثمر من 1,000 ريال وامتلك حصة موثقة رسمياً
@@ -119,12 +117,12 @@ TEXTS_AR = {
 
     'portfolio': """📊 *المحفظة العقارية*
 
-*3 عقارات تجارية في الرياض — جاهزة ومؤجرة 100%*
+*3 عقارات تجارية وسكنية في الرياض — مؤجرة بعقود رسمية*
 
 ━━━━━━━━━━━━━━━
 
 🏢 *العقار الأول*
-📍 الرياض، تجاري مؤجر
+📍 الرياض، عقار مؤجر
 💰 القيمة: 3.5 مليون ريال
 📈 العائد السنوي: 6.71%
 📊 الحصص: 3,500 حصة
@@ -133,7 +131,7 @@ TEXTS_AR = {
 ━━━━━━━━━━━━━━━
 
 🏢 *العقار الثاني — الأعلى عائداً ⭐*
-📍 الرياض، تجاري مؤجر
+📍 الرياض، عقار مؤجر
 💰 القيمة: 3 مليون ريال
 📈 العائد السنوي: *10.16%*
 📊 الحصص: 3,000 حصة
@@ -142,7 +140,7 @@ TEXTS_AR = {
 ━━━━━━━━━━━━━━━
 
 🏢 *العقار الثالث*
-📍 الرياض، تجاري مؤجر
+📍 الرياض، عقار مؤجر
 💰 القيمة: 2.5 مليون ريال
 📈 العائد السنوي: 8.8%
 📊 الحصص: 2,500 حصة
@@ -167,8 +165,8 @@ TEXTS_AR = {
 ✅ *بيع العقار بعد 3-5 سنوات*
 أو عند ارتفاع قيمته 30%، مع توزيع العوائد طوال المدة
 
-✅ *أقل حد للاستثمار في السوق*
-ابدأ بـ 1,000 ريال فقط — أقل من أي منافس
+✅ *حد منخفض للاستثمار*
+ابدأ بـ 1,000 ريال فقط للحصة الواحدة
 
 ✅ *تقييم عقاري معتمد*
 من مقيّمين معتمدين لدى هيئة العقار
@@ -207,12 +205,12 @@ TEXTS_AR = {
 
     'licenses': """📜 *الوثائق والتراخيص الرسمية*
 
-*مرخصون ومسجلون رسمياً — جميع التراخيص سارية*
+*التراخيص والوثائق الرسمية الحالية*
 
 ━━━━━━━━━━━━━━━
 
 📄 *رخصة فال للوساطة والتسويق*
-رقم: I200027650
+رقم: 1200027650
 سارية حتى: 23/06/2027
 
 📄 *رخصة فال لإدارة الأملاك*
@@ -337,19 +335,19 @@ juzabilmia.com""",
 
     'platform_correction': """📍 *تصحيح مهم:*
 
-*جزء بالمية* ليست منصة — بل هي *شركة سعودية مرخصة رسمياً*.
+*جزء بالمية* ليست منصة — بل هي *شركة سعودية موثقة رسمياً* (السجل التجاري والرخص أدناه).
 
 🏢 *الاسم الكامل:*
 شركة جزء بالمية للتطوير والاستثمار العقاري
 
 🏛️ *السجل التجاري:* 7040575412
-📄 *رخصة فال للوساطة:* I200027650
+📄 *رخصة فال للوساطة:* 1200027650
 📄 *رخصة إدارة الأملاك:* 2200003901
 📄 *عضوية الغرفة التجارية:* 965892
 
-✅ مرخصون من الجهات الحكومية المختصة
-✅ نقدم خدمات التملك العقاري الجزئي
-✅ متوافقون مع الشريعة الإسلامية
+✅ موثقون رسمياً (سجل تجاري + رخص فال + معروف)
+✅ مقدّمون على البيئة التنظيمية التجريبية لهيئة العقار
+✅ نموذج متوافق مع الشريعة الإسلامية
 
 اطلع على المزيد من القائمة 👇"""
 }
@@ -397,7 +395,7 @@ def faq_menu(chat_id):
 FAQ_AR = {
     'q1': """*١. ما هو التملك العقاري الجزئي؟*
 
-نموذج يتيح لك تملك حصة في عقار تجاري بمبلغ يبدأ من *1,000 ريال* والحصول على نصيبك من عوائد الإيجار بنسبة حصتك.
+نموذج يتيح لك تملك حصة في عقار تجاري أو سكني بمبلغ يبدأ من *1,000 ريال* والحصول على نصيبك من عوائد الإيجار بنسبة حصتك.
 
 ✅ تملك موثق رسمياً
 ✅ عوائد إيجارية ربع سنوية
@@ -405,9 +403,9 @@ FAQ_AR = {
 
     'q2': """*٢. هل العقارات موجودة فعلياً؟*
 
-نعم، لدينا *3 عقارات تجارية بقيمة 9 مليون ريال* محددة في الرياض، جميعها مؤجرة مسبقاً بعقود سارية.
+نعم، لدينا *3 عقارات تجارية وسكنية بقيمة 9 مليون ريال* محددة في الرياض، جميعها مؤجرة مسبقاً بعقود سارية عبر شبكة إيجار.
 
-🏢 الشركة تعمل على الاستحواذ عليها ونقل ملكيتها للمستثمرين عبر آلية التملك الجزئي، ضمن البيئة التنظيمية التجريبية لهيئة العقار.""",
+🏢 الشركة تعمل على الاستحواذ عليها ونقل ملكيتها للمستثمرين عبر آلية التملك الجزئي بعد صدور الترخيص الرسمي من الهيئة العامة للعقار.""",
 
     'q3': """*٣. كم يبلغ العائد السنوي؟*
 
@@ -420,13 +418,14 @@ FAQ_AR = {
 
     'q4': """*٤. هل الشركة مرخصة؟*
 
-نعم، الشركة مرخصة بالكامل:
-
-📄 *رخصة فال للوساطة:* I200027650
+الشركة حاصلة على:
+📄 *رخصة فال للوساطة:* 1200027650
 📄 *رخصة إدارة الأملاك:* 2200003901
-✅ ساريتان حتى *23/06/2027*
+📄 *عضوية إيجار وغرفة تجارية وشهادة معروف*
 
-كما أن جميع العقود موثقة في منصة إيجار الحكومية.""",
+⚠️ *وضعنا التنظيمي:* مقدّمون على البيئة التنظيمية التجريبية للهيئة العامة للعقار (REGA)، *ولم يصدر لنا حتى تاريخه ترخيص بمزاولة نشاط التملك العقاري الجزئي*.
+
+📌 لن يبدأ النشاط الفعلي (بيع الحصص، تحصيل المبالغ، نقل الملكيات، توزيع العوائد) إلا بعد صدور الترخيص الرسمي.""",
 
     'q5': """*٥. كيف أتواصل معكم؟*
 
@@ -480,15 +479,18 @@ FAQ_AR = {
 (سعر الوحدة الواحدة)
 
 ✅ يمكنك شراء أي عدد من الوحدات بحسب ميزانيتك
-✅ أقل حد في السوق السعودي
-✅ مناسب للجميع""",
+✅ مناسب لشريحة واسعة من المستثمرين""",
 
     'q10': """*١٠. ما موقف الضريبة على عوائد الاستثمار؟*
 
-الشركة *مسجلة في ضريبة القيمة المضافة*.
+الشركة *مسجلة رسمياً في ضريبة القيمة المضافة* لدى هيئة الزكاة والضريبة والجمارك.
 
-📧 للاستفسار عن تفاصيل الضريبة المطبقة على حصتك:
-*info@juzabilmia.com*""",
+🧾 *الرقم الضريبي:* 314770310200003
+📅 *نفاذ التسجيل:* 01/06/2026
+
+📊 تُطبّق ضريبة 15% على *رسوم الإدارة فقط* وفقاً للمادة (36) من اللائحة التنفيذية. قيمة الحصة الأساسية (1,000 ريال) معفاة كمعاملة استثمارية.
+
+📧 للتفاصيل: *info@juzabilmia.com*""",
 
     'q11': """*١١. من يتحمل مصاريف الصيانة؟*
 
@@ -519,13 +521,11 @@ TEXTS_EN = {
 
 🏢 *Fractional Real Estate Ownership in KSA*
 
-Invest in pre-leased commercial properties
-Starting from just *SAR 1,000*
-Returns up to *10.16% annually*
+Showcasing pre-leased commercial and residential properties
+Minimum *SAR 1,000* per share
+Estimated returns up to *10.16% annually* (post-license)
 
-✅ Officially licensed by REGA & FAL
-✅ Sharia-compliant
-✅ Documented via Ejar government platform
+⚠️ *We are in a pilot phase and have applied to REGA's regulatory sandbox. We have NOT yet been granted a license to operate fractional real estate activities. No share sales, fund collection, ownership transfers, or distributions are taking place at this time.*
 
 👇 *Choose what you'd like to know:*""",
 
@@ -539,7 +539,7 @@ A Saudi company specialized in fractional property ownership
 💼 *Capital:* SAR 100,000
 
 🎯 *Our Vision:*
-Enable you to own a share in pre-leased commercial properties and earn quarterly rental returns, starting from just SAR 1,000.
+Per our approved plan post-license, enable you to own a share in pre-leased commercial and residential properties and earn quarterly rental returns, starting from SAR 1,000 per share.
 
 ✅ No complications
 ✅ No middlemen
@@ -557,7 +557,7 @@ Enable you to own a share in pre-leased commercial properties and earn quarterly
 Create your account in 2 minutes with secure KYC
 
 2️⃣ *Choose Your Property*
-Browse 3 pre-leased commercial properties in Riyadh
+Browse 3 pre-leased commercial and residential properties in Riyadh
 
 3️⃣ *Buy Your Share*
 Invest from SAR 1,000 and own a documented share
@@ -572,12 +572,12 @@ Regular rental income distributed *quarterly*
 
     'portfolio': """📊 *Real Estate Portfolio*
 
-*3 Commercial Properties in Riyadh — 100% Leased*
+*3 Commercial and Residential Properties in Riyadh — Officially Leased*
 
 ━━━━━━━━━━━━━━━
 
 🏢 *Property 1*
-📍 Riyadh, Commercial Leased
+📍 Riyadh, Officially Leased
 💰 Value: SAR 3.5M
 📈 Annual Return: 6.71%
 📊 Shares: 3,500
@@ -586,7 +586,7 @@ Regular rental income distributed *quarterly*
 ━━━━━━━━━━━━━━━
 
 🏢 *Property 2 — Highest Return ⭐*
-📍 Riyadh, Commercial Leased
+📍 Riyadh, Officially Leased
 💰 Value: SAR 3M
 📈 Annual Return: *10.16%*
 📊 Shares: 3,000
@@ -595,7 +595,7 @@ Regular rental income distributed *quarterly*
 ━━━━━━━━━━━━━━━
 
 🏢 *Property 3*
-📍 Riyadh, Commercial Leased
+📍 Riyadh, Officially Leased
 💰 Value: SAR 2.5M
 📈 Annual Return: 8.8%
 📊 Shares: 2,500
@@ -620,8 +620,8 @@ Sell your share after 1 year easily
 ✅ *Property Sale in 3-5 Years*
 Or when value rises by 30%, with returns throughout
 
-✅ *Lowest Entry in the Market*
-Start with just SAR 1,000
+✅ *Low Entry Threshold*
+Start with just SAR 1,000 per share
 
 ✅ *Certified Valuations*
 By REGA-certified valuers via Taqeem platform
@@ -660,12 +660,12 @@ Application submitted to join REGA's regulatory sandbox under direct regulatory 
 
     'licenses': """📜 *Official Licenses*
 
-*Fully licensed and registered*
+*Current Licenses and Official Documents*
 
 ━━━━━━━━━━━━━━━
 
 📄 *FAL Brokerage License*
-No: I200027650
+No: 1200027650
 Valid until: 23/06/2027
 
 📄 *FAL Property Management License*
@@ -790,19 +790,19 @@ juzabilmia.com""",
 
     'platform_correction': """📍 *Important Clarification:*
 
-*Juz Bilmia* is not a platform — it is an *officially licensed Saudi company*.
+*Juz Bilmia* is not a platform — it is an *officially registered Saudi company* (CR and FAL licenses below).
 
 🏢 *Full Name:*
 Juz Bilmia Real Estate Development & Investment
 
 🏛️ *Commercial Registration:* 7040575412
-📄 *FAL Brokerage License:* I200027650
+📄 *FAL Brokerage License:* 1200027650
 📄 *Property Management License:* 2200003901
 📄 *Chamber of Commerce:* 965892
 
-✅ Licensed by official Saudi authorities
-✅ We provide fractional real estate ownership
-✅ Sharia-compliant
+✅ Officially documented (CR + FAL Licenses + Maroof)
+✅ Applicant in REGA's regulatory sandbox program
+✅ Sharia-compliant model
 
 Explore more from the menu 👇"""
 }
@@ -810,7 +810,7 @@ Explore more from the menu 👇"""
 FAQ_EN = {
     'q1': """*1. What is fractional real estate ownership?*
 
-A model that allows you to own a share in a commercial property starting from *SAR 1,000* and receive your share of rental returns.
+A model that allows you to own a share in a commercial or residential property starting from *SAR 1,000* and receive your share of rental returns.
 
 ✅ Officially documented ownership
 ✅ Quarterly rental returns
@@ -818,9 +818,9 @@ A model that allows you to own a share in a commercial property starting from *S
 
     'q2': """*2. Are the properties real?*
 
-Yes, we have *3 commercial properties worth SAR 9M* in Riyadh, all pre-leased with active contracts.
+Yes, we have *3 commercial and residential properties worth SAR 9M* in Riyadh, all pre-leased through Ejar government platform.
 
-🏢 The company is acquiring them and transferring ownership to investors via fractional ownership, within REGA's regulatory sandbox.""",
+🏢 The company will acquire them and transfer ownership to investors via fractional ownership *after obtaining the official license from REGA*.""",
 
     'q3': """*3. What is the annual return?*
 
@@ -833,13 +833,14 @@ Note: All rates shown are *gross returns* before management fees.
 
     'q4': """*4. Is the company licensed?*
 
-Yes, fully licensed:
-
-📄 *FAL Brokerage License:* I200027650
+The company holds:
+📄 *FAL Brokerage License:* 1200027650
 📄 *Property Management License:* 2200003901
-✅ Both valid until *23/06/2027*
+📄 *Ejar membership, Chamber of Commerce, and Maroof certificate*
 
-All contracts also documented on Ejar government platform.""",
+⚠️ *Regulatory status:* We are an applicant in REGA's regulatory sandbox program. *We have NOT yet been granted a license to operate fractional real estate activities.*
+
+📌 Actual operations (share sales, fund collection, ownership transfers, distributions) will only commence after the official license is issued.""",
 
     'q5': """*5. How to contact us?*
 
@@ -893,15 +894,18 @@ Displayed return is *gross*.
 (Single unit price)
 
 ✅ Buy any number of units per your budget
-✅ Lowest entry in Saudi market
-✅ Suitable for everyone""",
+✅ Suitable for a wide range of investors""",
 
     'q10': """*10. What about tax on returns?*
 
-The company is *registered for VAT*.
+The company is *officially registered for VAT* with ZATCA.
 
-📧 For tax details on your share:
-*info@juzabilmia.com*""",
+🧾 *VAT Number:* 314770310200003
+📅 *Effective:* 01/06/2026
+
+📊 15% VAT applies *only to management fees* per Article (36) of the VAT Implementing Regulations. The base share value (SAR 1,000) is exempt as an investment transaction.
+
+📧 Details: *info@juzabilmia.com*""",
 
     'q11': """*11. Who covers maintenance costs?*
 
